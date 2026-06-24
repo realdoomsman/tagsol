@@ -303,6 +303,84 @@ body {
 
 .btn-ghost:hover { border-color: #fff; color: #fff; }
 
+.ca-banner {
+  width: 100%;
+  max-width: 500px;
+  margin: 48px auto 0;
+  padding: 1px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #222 0%, #333 50%, #222 100%);
+  background-size: 200% 200%;
+  animation: ca-shimmer 6s ease infinite;
+}
+
+@keyframes ca-shimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.ca-inner {
+  background: #0d0d0d;
+  border-radius: 15px;
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.ca-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ca-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.ca-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.ca-value {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 14px;
+  color: #666;
+  letter-spacing: 0.5px;
+}
+
+.ca-badge {
+  padding: 6px 16px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid #2a2a2a;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #555;
+  white-space: nowrap;
+  animation: ca-pulse 3s ease-in-out infinite;
+}
+
+@keyframes ca-pulse {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
 .footer {
   padding: 20px 40px;
   border-top: 1px solid #1a1a1a;
@@ -316,6 +394,8 @@ body {
   .nav-links { gap: 20px; }
   .title { letter-spacing: -2px; }
   .main { padding: 40px 16px; }
+  .ca-inner { flex-direction: column; text-align: center; }
+  .ca-left { flex-direction: column; }
 }
 `;
 
@@ -343,6 +423,18 @@ export default function App() {
           <main className="main">
             <div className="content">
               <ProfilePage username={profileUser} />
+            </div>
+            <div className="ca-banner">
+              <div className="ca-inner">
+                <div className="ca-left">
+                  <div className="ca-icon">◆</div>
+                  <div>
+                    <div className="ca-label">$TAG Contract Address</div>
+                    <div className="ca-value">Coming soon</div>
+                  </div>
+                </div>
+                <div className="ca-badge">Soon</div>
+              </div>
             </div>
           </main>
           <footer className="footer">
@@ -376,6 +468,18 @@ export default function App() {
             {tab === 'send' && <SendTab />}
             {tab === 'register' && <RegisterTab />}
             {tab === 'vanity' && <VanityTab />}
+          </div>
+          <div className="ca-banner">
+            <div className="ca-inner">
+              <div className="ca-left">
+                <div className="ca-icon">◆</div>
+                <div>
+                  <div className="ca-label">$TAG Contract Address</div>
+                  <div className="ca-value">Coming soon</div>
+                </div>
+              </div>
+              <div className="ca-badge">Soon</div>
+            </div>
           </div>
         </main>
         <footer className="footer">
