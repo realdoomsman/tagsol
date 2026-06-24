@@ -1,8 +1,29 @@
+# dependencies
 node_modules/
-target/
-test-ledger/
-.env
-*.log
-.DS_Store
+
+# build output
 dist/
-node_modules
+target/
+
+# anchor / solana
+test-ledger/
+.anchor/
+
+# environment
+.env
+.env.local
+.env.production
+
+# logs
+*.log
+npm-debug.log*
+
+# os
+.DS_Store
+Thumbs.db
+
+# editors
+.vscode/
+.idea/
+*.swp
+*.swo
