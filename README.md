@@ -105,7 +105,7 @@ anchor test
 | | |
 |---|---|
 | **Ticker** | $TAG |
-| **Contract Address** | Coming soon |
+| **Contract Address** | `TPBZ4LBaDZ4CRKCi6oFurrJeLqA8eRiG4DzNoKepump` |
 | **Network** | Solana |
 
 <br />
