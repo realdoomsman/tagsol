@@ -16,7 +16,7 @@ Instead of sharing `7xK2mF9qR4nP8vL...`, just share `@yourname`.
 
 <br />
 
-[Live App](https://tagsol.xyz) · [Twitter](https://x.com/TagSolxyz) · [Report Bug](https://github.com/realdoomsman/soltag/issues)
+[Live App](https://tagsol.xyz) · [Twitter](https://x.com/TagSolxyz) · [Report Bug](https://github.com/realdoomsman/tagsol/issues)
 
 ---
 
