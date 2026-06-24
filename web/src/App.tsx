@@ -661,7 +661,7 @@ function ProfilePage({ username }: { username: string }) {
 
       <div style={{ marginTop: 32, padding: 20, background: '#111', borderRadius: 12 }}>
         <div style={{ fontSize: 12, color: '#666', marginBottom: 12 }}>Share this profile</div>
-        <div style={{ fontFamily: 'monospace', fontSize: 14, color: '#888' }}>tagsol.xyz/@{data?.alias}</div>
+        <div style={{ fontFamily: 'monospace', fontSize: 14, color: '#888' }}>soltag.xyz/@{data?.alias}</div>
       </div>
     </div>
   );
