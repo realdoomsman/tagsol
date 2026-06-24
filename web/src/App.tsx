@@ -528,10 +528,10 @@ export default function App() {
                 <div className="ca-icon">◆</div>
                 <div>
                   <div className="ca-label">$TAG Contract Address</div>
-                  <div className="ca-value">Coming soon</div>
+                  <div className="ca-value">TPBZ4LBaDZ4CRKCi6oFurrJeLqA8eRiG4DzNoKepump</div>
                 </div>
               </div>
-              <div className="ca-badge">Soon</div>
+              <div className="ca-badge" style={{ cursor: 'pointer' }} onClick={() => { navigator.clipboard.writeText('TPBZ4LBaDZ4CRKCi6oFurrJeLqA8eRiG4DzNoKepump'); }}>Copy</div>
             </div>
           </div>
         </main>
